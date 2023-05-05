@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64D96521-5B22-4AE4-88DA-8C88809F0B35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ACH</RootNamespace>
+    <AssemblyName>ACH</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common.resources">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization.resources">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design.resources">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms.resources">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="acceptPayment.cs" />
+    <Compile Include="AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMain.Designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.Designer.cs">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReport.Designer.cs">
+      <DependentUpon>AdminReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechChgContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechChgContact.Designer.cs">
+      <DependentUpon>TechChgContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechChgPwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechChgPwd.Designer.cs">
+      <DependentUpon>TechChgPwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompletedService.cs" />
+    <Compile Include="customerMakePayment.cs" />
+    <Compile Include="customerNumber.cs" />
+    <Compile Include="customerRequestedServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customerRequestedServices.Designer.cs">
+      <DependentUpon>customerRequestedServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cus_Change_Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cus_Change_Number.designer.cs">
+      <DependentUpon>cus_Change_Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cus_Change_Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cus_Change_Password.designer.cs">
+      <DependentUpon>cus_Change_Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cus_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cus_update.Designer.cs">
+      <DependentUpon>cus_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_Main.Designer.cs">
+      <DependentUpon>customer_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="declinePayment.cs" />
+    <Compile Include="IncomeReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncomeReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="recUpdateProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recUpdateProfileForm.Designer.cs">
+      <DependentUpon>recUpdateProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_changeNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec_changeNumber.Designer.cs">
+      <DependentUpon>rec_changeNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registerCustomerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerCustomerForm.designer.cs">
+      <DependentUpon>registerCustomerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncomeRepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncomeRepForm.Designer.cs">
+      <DependentUpon>IncomeRepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recChangeContact.cs" />
+    <Compile Include="recChangePass.cs" />
+    <Compile Include="receptionistFom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionistFom.Designer.cs">
+      <DependentUpon>receptionistFom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_changePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rec_changePassword.Designer.cs">
+      <DependentUpon>rec_changePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rec_profile.cs" />
+    <Compile Include="register_cus.cs" />
+    <Compile Include="ServiceRepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceRepForm.designer.cs">
+      <DependentUpon>ServiceRepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ServiceReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TechMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechMain.Designer.cs">
+      <DependentUpon>TechMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TechProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TechProfile.designer.cs">
+      <DependentUpon>TechProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInfo.cs" />
+    <Compile Include="TotalIncomeDataSett.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TotalIncomeDataSett.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRegister.resx">
+      <DependentUpon>AdminRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReport.resx">
+      <DependentUpon>AdminReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechChgContact.resx">
+      <DependentUpon>TechChgContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechChgPwd.resx">
+      <DependentUpon>TechChgPwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customerRequestedServices.resx">
+      <DependentUpon>customerRequestedServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_Main.resx">
+      <DependentUpon>customer_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cus_Change_Number.resx">
+      <DependentUpon>cus_Change_Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cus_Change_Password.resx">
+      <DependentUpon>cus_Change_Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cus_update.resx">
+      <DependentUpon>cus_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recUpdateProfileForm.resx">
+      <DependentUpon>recUpdateProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rec_changeNumber.resx">
+      <DependentUpon>rec_changeNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerCustomerForm.resx">
+      <DependentUpon>registerCustomerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncomeRepForm.resx">
+      <DependentUpon>IncomeRepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="receptionistFom.resx">
+      <DependentUpon>receptionistFom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rec_changePassword.resx">
+      <DependentUpon>rec_changePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="ServiceRepForm.resx">
+      <DependentUpon>ServiceRepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechMain.resx">
+      <DependentUpon>TechMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TechProfile.resx">
+      <DependentUpon>TechProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="IncomeReportDataSet.xsc">
+      <DependentUpon>IncomeReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="IncomeReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IncomeReportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="IncomeReportDataSet.xss">
+      <DependentUpon>IncomeReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ServiceReportDataSet.xsc">
+      <DependentUpon>ServiceReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ServiceReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ServiceReportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ServiceReportDataSet.xss">
+      <DependentUpon>ServiceReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TotalIncomeDataSett.xsc">
+      <DependentUpon>TotalIncomeDataSett.xsd</DependentUpon>
+    </None>
+    <None Include="TotalIncomeDataSett.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TotalIncomeDataSett.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TotalIncomeDataSett.xss">
+      <DependentUpon>TotalIncomeDataSett.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\this.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\this1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\this2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

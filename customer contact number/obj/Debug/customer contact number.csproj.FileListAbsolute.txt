@@ -1,0 +1,10 @@
+\\mac\home\Documents\Introduction to OOP\customer contact number\bin\Debug\customer contact number.exe.config
+\\mac\home\Documents\Introduction to OOP\customer contact number\bin\Debug\customer contact number.exe
+\\mac\home\Documents\Introduction to OOP\customer contact number\bin\Debug\customer contact number.pdb
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\customer_contact_number.Properties.Resources.resources
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\customer contact number.csproj.GenerateResource.cache
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\customer contact number.csproj.CoreCompileInputs.cache
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\customer contact number.exe
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\customer contact number.pdb
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\customer contact number.csproj.AssemblyReference.cache
+\\mac\home\Documents\Introduction to OOP\customer contact number\obj\Debug\ACH.Form1.resources

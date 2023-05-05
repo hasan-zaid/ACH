@@ -1,0 +1,10 @@
+C:\Users\abdallahalkhattal\source\repos\update own profile\bin\Debug\update own profile.exe.config
+C:\Users\abdallahalkhattal\source\repos\update own profile\bin\Debug\update own profile.exe
+C:\Users\abdallahalkhattal\source\repos\update own profile\bin\Debug\update own profile.pdb
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update own profile.csproj.AssemblyReference.cache
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update_own_profile.Form1.resources
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update_own_profile.Properties.Resources.resources
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update own profile.csproj.GenerateResource.cache
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update own profile.csproj.CoreCompileInputs.cache
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update own profile.exe
+C:\Users\abdallahalkhattal\source\repos\update own profile\obj\Debug\update own profile.pdb

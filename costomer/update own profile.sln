@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "update own profile", "update own profile.csproj", "{985F5A43-6827-4A52-959C-346B3BFA051A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASSIGNMENT", "..\ASSIGNMENT\ASSIGNMENT.csproj", "{7D7A9F55-9958-4AFC-BAA8-5FF5D948CA8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Technician change password", "..\Technician change password\Technician change password.csproj", "{EB8B8016-B0C6-4D78-996A-2940EEC16F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "costomer change password", "..\costomer change password\costomer change password.csproj", "{DC4054DF-AD16-4B48-A39C-6D675BCFAFE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASSIGNMENT_2", "..\ASSIGNMENT_2\ASSIGNMENT_2.csproj", "{BE46FE5A-4F3A-4656-9A68-E676E49BA3C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "customer contact number", "..\customer contact number\customer contact number.csproj", "{1D05BFB8-687B-4B3A-AAE4-72A034FF23BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{985F5A43-6827-4A52-959C-346B3BFA051A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985F5A43-6827-4A52-959C-346B3BFA051A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985F5A43-6827-4A52-959C-346B3BFA051A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985F5A43-6827-4A52-959C-346B3BFA051A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D7A9F55-9958-4AFC-BAA8-5FF5D948CA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D7A9F55-9958-4AFC-BAA8-5FF5D948CA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D7A9F55-9958-4AFC-BAA8-5FF5D948CA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D7A9F55-9958-4AFC-BAA8-5FF5D948CA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8B8016-B0C6-4D78-996A-2940EEC16F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8B8016-B0C6-4D78-996A-2940EEC16F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8B8016-B0C6-4D78-996A-2940EEC16F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8B8016-B0C6-4D78-996A-2940EEC16F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC4054DF-AD16-4B48-A39C-6D675BCFAFE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC4054DF-AD16-4B48-A39C-6D675BCFAFE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC4054DF-AD16-4B48-A39C-6D675BCFAFE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC4054DF-AD16-4B48-A39C-6D675BCFAFE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE46FE5A-4F3A-4656-9A68-E676E49BA3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE46FE5A-4F3A-4656-9A68-E676E49BA3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE46FE5A-4F3A-4656-9A68-E676E49BA3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE46FE5A-4F3A-4656-9A68-E676E49BA3C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D05BFB8-687B-4B3A-AAE4-72A034FF23BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D05BFB8-687B-4B3A-AAE4-72A034FF23BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D05BFB8-687B-4B3A-AAE4-72A034FF23BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D05BFB8-687B-4B3A-AAE4-72A034FF23BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77078AB9-91DE-48EA-BA9D-D558FDA6D667}
+	EndGlobalSection
+EndGlobal
